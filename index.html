@@ -257,12 +257,11 @@ km: 0
 
 You are Emily, a healthy 29-year-old woman, currently working as a bartender at the local pub. You and your husband, Jack, who is also 29 and works FIFO in the mines, have decided it&#39;s time to try for a baby! 
 
-You know you will need a lot of support in this new chapter of your life. Luckily, your mum and dad also live close by, as does Jack&#39;s older sister and her kids.  But where exactly do you live? Will your child be part of the 27.5% of Australian children growing up in regional or remote Australia^1, 2^?
+You know you will need a lot of support in this new chapter of your life. Luckily, your mum and dad also live close by, as does Jack&#39;s older sister and her kids.  But where exactly do you live? Will your child be part of the 27.5% of Australian children growing up in regional or remote Australia&lt;sup&gt;1, 2&lt;/sup&gt;?
 
 &gt;[[Winton]]
 &gt;[[Stanthorpe]]
 &gt;[[Gympie]]
-&gt;[[Brisbane]]
 
 Your choice will affect the services you have access to, and how far you&#39;ll need to travel to reach them. But location isn&#39;t the only factor in the care you receive - as you play, consider how things may differ if you didn&#39;t have family nearby, if you were of a higher or lower socioeconomic status, if you were disabled or had complex medical needs, if you were Aboriginal or Torres Strait Islander, or a migrant, refugee or from a culturally or linguistically diverse background. Including all social determinants of health would dramatically increase the complexity of this game, but they are incredibly important in shaping health outcomes across the lifespan. 
 
@@ -331,12 +330,17 @@ You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&
 You are so relieved you were able to conceive so quickly. You can&#39;t imagine having to go through IVF - would you travel to Longreach for all your appointments, or would you move somewhere with more service availability? At least that isn&#39;t a choice you need to make right now. 
 
 Your GP tells you that they cannot provide antenatal care, and the closest available location with maternity services is Longreach Hospital, 172km away. They refer you to Longreach Hospital; you will be 12 weeks pregnant based on your last menstrual period (LMP) at your first appointment. 
-&gt;[[Attend 12-week appointment (+344km)]]
-&gt;[[Is there another option?]]
 
 You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.
 [continue]
 [if place === &#39;Stanthorpe&#39;]
+You are so relieved you were able to conceive so quickly. You can&#39;t imagine having to go through IVF - would you travel to Toowoomba or Brisbane for all your appointments, or would you move somewhere with more service availability? At least that isn&#39;t a choice you need to make right now. 
+
+You find out that your GP is happy to offer GP shared care for all your antenatal appointments, or they can refer you to Stanthorpe hospital to see the obstetricians and midwives there. You will also be able to deliver your baby in Stanthorpe if your pregnancy remains low risk, but you may need to travel to Toowoomba or even Brisbane if you experience any complications. 
+
+&gt;[[GP shared care]]
+&gt;[[Hospital appointments]]
+
 You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.
 [continue]
 
@@ -432,7 +436,7 @@ You and Jack make the drive home after you&#39;re discharged from hospital, two 
 You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="20" name="in labour" tags="" position="575,1425" size="100,100">gestation: 40
 --
 
-At {gestation} weeks and 2 days you go into labour. Jack drives you to the hospital (which is thankfully only 10 minutes away) when your contractions are regularly 5 minutes apart. 
+At {gestation} weeks and 2 days you go into labour. Jack drives you to the hospital (which is thankfully not far away) when your contractions are regularly 5 minutes apart. 
 
 [if KnowsGender]
 Fortunately, labour goes well. You get an epidural at 7cm dilation (after 3 more hours of labour), and [[Olivia]] is born 3 hours after that. Congratulations! After an hour of skin-to-skin, she receives her hepatitis B and RSV vaccinations, and her vitamin K injection, and you are moved to the postpartum ward. 
@@ -445,7 +449,7 @@ Fortunately, labour goes well. You get an epidural at 7cm dilation (after 3 more
 
 You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="21" name="Maternity leave begins" tags="" position="700,1550" size="100,100">You are so thankful that you are able to access publicly funded parental leave pay. You and Jack are eligible for 24 weeks in total - you take 22 weeks, and Jack takes 2. You feel so lucky that he has full weeks off work, though you miss him when he leaves. Your mum and Jack&#39;s sister help out a lot, when they are able. 
 
-You have decided to breastfeed Olivia and fortunately things have been going well, so far. You were a bit worried when Olivia started cluster feeding, but after a late night online search you found the Australian Breastfeeding Association and their live chat helpline, where a lovely volunteer reassured you everything was normal. 
+You have decided to breastfeed Olivia and fortunately things have been going well, so far. You were a bit worried when Olivia started cluster feeding, but after a late night online search you found the Australian Breastfeeding Association (ABA) and their live chat helpline, where a lovely volunteer reassured you everything was normal. 
 
 [if place === &#39;Winton&#39;]
 What would you do if you needed extra support with breastfeeding? Maybe there&#39;s an in person lactation consultant in Longreach - would you make another trip? Or would a telehealth appointment be enough? You are grateful infant formula exists for those who need it, but are relieved to not need to worry about the extra cost (or all the washing up and sterilisation).
@@ -456,6 +460,12 @@ You feel much better as Olivia moves out of the newborn potato stage and you get
 
 [continue]
 
+[if place === &#39;Stanthorpe&#39;]
+You have also been going to local ABA group catch ups&lt;sup&gt;reference&lt;/sup&gt; - it has been so nice meeting with other mums with babies around Olivia&#39;s age. Seeing the mums of older toddlers is also so inspiring - you can&#39;t imagine Olivia being that big and capable one day. 
+
+Between the ABA group, your husband, and your family, you are feeling well-supported and coping well with your new role, but you feel much better as Olivia moves out of the newborn potato stage and you get more confident leaving the house with her. She has become the star of the town on your early morning walks. 
+
+[continue]
 Olivia is developing well and meeting all her milestones. She is now around 5 months old, smiling, laughing, and babbling, almost sitting up by herself and you&#39;re getting ready to start thinking about her first solid foods. Another thing you need to think about now is returning to work - your parental leave has been fully paid out. 
 
 &gt;[[What are your plans for daycare?]]
@@ -556,16 +566,97 @@ He can refer you to see a paediatrician in Bundaberg - an in-person appointment 
 
 You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="27" name="Wait until Olivia is 18 months (+1 risk)" tags="" position="500,2050" size="100,100">risk: risk + 1
 --
+You wait a month, and Olivia starts walking! You are relieved that Olivia seems to be on track developmentally and you don&#39;t need to spend time and money travelling to and from appointments - though of course you would, if you had to. Your GP recommends you keep an eye on things, gives you a brochure on child development red flags, and tells you to come back if you have any concerns&lt;sup&gt;reference&lt;/sup&gt;.
 
-You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="28" name="See the paediatrician in Longreach (+334km)" tags="" position="700,2125" size="100,100">km: km + 334
+You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="28" name="See the paediatrician in Longreach (+334km)" tags="" position="650,2075" size="100,100">km: km + 334
 --
 
-You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="29" name="See the paediatrician in Toowoomba (+242km)" tags="" position="725,2300" size="100,100">km: km + 242
+You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="29" name="See the paediatrician in Toowoomba (+242km)" tags="" position="775,2175" size="100,100">km: km + 242
 --
 
-You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="30" name="Try telehealth" tags="" position="850,2175" size="100,100">You wait a month, and before you&#39;ve even been given a date and time for your appointment, Olivia starts walking! You are relieved that Olivia seems to be on track developmentally and you don&#39;t need to spend time and money travelling to and from appointments - though of course you would, if you had to. Your GP recommends you keep an eye on things, gives you a brochure on child development red flags, and tells you to come back if you have any concerns&lt;sup&gt;reference&lt;/sup&gt;.
+You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="30" name="Try telehealth" tags="" position="900,2075" size="100,100">You wait a month, and before you&#39;ve even been given a date and time for your appointment, Olivia starts walking! You are relieved that Olivia seems to be on track developmentally and you don&#39;t need to spend time and money travelling to and from appointments - though of course you would, if you had to. Your GP recommends you keep an eye on things, gives you a brochure on child development red flags, and tells you to come back if you have any concerns&lt;sup&gt;reference&lt;/sup&gt;.
 
 You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="31" name="See the paediatrician in Bundaberg (+300km)" tags="" position="525,1875" size="100,100">km: km + 300
 --
+
+You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="32" name="GP shared care" tags="" position="650,1125" size="100,100">GPcare: true
+--
+
+You work with your GP to schedule appointments throughout the rest of your pregnancy until the hospital takes over closer to delivery, but the hospital recommends that you still come and see them for your booking appointment at 12 weeks gestation. 
+
+&gt;[[Attend 12-week appointment]]
+
+You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="33" name="Hospital appointments" tags="" position="525,1125" size="100,100">GPcare: false
+--
+
+Your GP refers you to Stanthorpe Hospital, and your first appointment is scheduled when you are 12 weeks pregnant. 
+
+&gt;[[Attend 12-week appointment]]
+
+You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="34" name="Attend 12-week appointment" tags="" position="650,1250" size="100,100">Luckily, your appointment coincides with one of Jack&#39;s weeks off work, so you both head to Stanthorpe Hospital, a 15 minute drive away from your house. Your pregnancy has been uneventful so far - you&#39;ve experienced some mild nausea and you&#39;re a bit more fatigued than usual, but nothing unmanageable. 
+
+At the appointment, you meet your midwife, who tells you she will hopefully be present at the birth of your baby (though sometimes scheduling doesn&#39;t allow and you may have another midwife on the day). 
+
+She also lets you know that if your pregancy becomes too complicated for Stanthorpe Hospital to handle, you may need to travel to Toowoomba or Brisbane for antenatal care or to deliver your baby. She lets you know about the Patient Travel Subsidy Scheme which may help provide some financial assistance with travel and accommodation costs. 
+
+She then offers you two options for investigations, the first trimester combined screening or the NIPT and an early morphology scan; by some miracle an ultrasound appointment was already arranged for you today so you won&#39;t even need to take extra time off work!  
+Both options involve an ultrasound and a blood test. The first trimester combined screening is covered by Medicare. The NIPT will cost about $400 and you will also get to find out the sex of the baby. 
+
+&gt;[[NIPT (find out the baby&#39;s sex)]]
+&gt;[[First trimester combined screening]]
+
+You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="35" name="NIPT (find out the baby&#39;s sex)" tags="" position="525,1625" size="100,100">KnowsGender: true
+--
+Congratulations, it&#39;s a girl!
+
+You and Jack have already come up with the perfect girl name: Olivia. 
+
+The NIPT screening also thankfully comes back with a low risk of genetic abnormalities, and everything looks good on your early anatomy scan - but think about what you would do if your NIPT came back high risk, would you undergo extra testing and potentially extra travel?
+
+&gt;[[Continue]]
+
+You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="36" name="First trimester combined screening" tags="" position="525,1750" size="100,100">KnowsGender: false
+--
+Your blood test comes back with normal beta-HCG and PAPP-A for your age, weight, and gestational age, and your nuchal translucency scan was also normal, which your GP tells you means you have a low risk of your baby having genetic abnormalities such as Down Syndrome. There is little need to have more invasive prenatal testing, such as amniocentesis or CVS, but what would you do if your results came back as high risk? Would you undergo extra testing and potentially extra travel?
+
+&gt;[[Continue]]
+
+You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="37" name="Continue" tags="" position="375,1600" size="100,100">gestation: 37
+--
+
+Your pregnancy continues uneventfully, fortunately. 
+
+[if GPcare]
+It has been so convenient to see your regular GP throughout your pregnancy - you have felt very supported. 
+
+[else]
+You are so grateful that your lack of complications has meant you were able to continue your antenatal care at Stanthorpe Hospital. You couldn&#39;t imagine needing to drive over an hour for every appointment.
+
+[continued]
+
+
+You also managed to attend some education sessions offered by the hospital on labour and delivery, breastfeeding, and parenting, so you feel as prepared as you could be for this new chapter. 
+
+You are now {gestation} weeks pregnant, not long to go now until you&#39;re in [[labour]]. 
+
+You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="38" name="labour" tags="" position="375,1725" size="100,100">gestation: 40
+--
+
+At {gestation} weeks and 2 days you go into labour. Jack drives you to the hospital (which is thankfully not far away) when your contractions are regularly 5 minutes apart. 
+
+[if KnowsGender]
+Fortunately, labour goes well. You get an epidural at 7cm dilation (after 3 more hours of labour), and [[Olivia is born]] 3 hours after that. Congratulations! After an hour of skin-to-skin, she receives her hepatitis B and RSV vaccinations, and her vitamin K injection, and you are moved to the postpartum ward. 
+
+[else]
+Fortunately, labour goes well. You get an epidural at 7cm dilation (after 3 more hours of labour), and eventually deliver a healthy baby girl! You agree to vaccinate her for hepatitis B and RSV, as well as her vitamin K injection.  You and Jack already know exactly what to name her:
+
+&gt;{link to: &#39;Olivia is born&#39;, label: &#39;Olivia&#39;}
+[continued]
+You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="39" name="Olivia is born" tags="" position="375,1850" size="100,100">You stay in hospital for two days after Olivia is born. You are so glad that your pregnancy, labour, and delivery were so uneventful. What if you&#39;d had a complication during pregnancy? You couldn&#39;t imagine all the extra attention, time, distance, and money. What if you had needed to travel to Toowoomba or Brisbane?
+
+You have already booked 1- and 6-week appointments with your GP for you and Olivia. Now all that is left to do is settle into parenthood. 
+
+&gt;[[Maternity leave begins]]
+
 
 You currently have &lt;span style=&#39;color: red;&#39;&gt;{risk} risk&lt;/span&gt; points and &lt;span style=&#39;color: orange;&#39;&gt;{km} km&lt;/span&gt;.</tw-passagedata></tw-storydata></html>
